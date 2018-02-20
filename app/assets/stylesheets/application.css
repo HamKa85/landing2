@@ -16,7 +16,7 @@
 
  html {
   	overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: auto;
   }
 
   body{
@@ -31,12 +31,38 @@
 h1 {
     color: black !important;
     text-transform: uppercase;
+    font-family: "League Spartan", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h3 {
+    color: black !important;
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    font-family: "League Spartan", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  color: black !important;
+  font-size: 3.425rem;
+  font-family: "League Spartan", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.2em;
+  margin: 0;
+  margin-bottom: 0px;
+  padding: 0;
+  position: relative;
 }
 
 p, a {
  color:green;
 }
 
+li {
+color: grey;
+text-align: left;
+justify-content: flex-start;
+}
+
+/*------- Header -------- */
 
   #header_flynn {
   	display: flex;
@@ -55,19 +81,147 @@ p, a {
   #header_droite {
   	display: flex;
   	justify-content: flex-end;
-  	width: 15%;
+  	width: 23%;
   	margin-left: 15px;
   	margin-top: 15px;
+    font-family: "League Spartan", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
   	justify-content: space-between;
   	font-size: 100%;
   	color: white;
     margin-right: 50px;
   }
 
+
+header a:hover {
+   background-color: grey ;
+   border-color: grey ;
+   color: #ffffff;
+ }
+
+
   .about {
     display: block;
-color: inherit;
-text-decoration: none;
-
-
+    color: inherit;
+    text-decoration: none;
   }
+
+  .boutonh {
+    padding: 0.88em 1.36em;
+    padding-top: 0.88em;
+    padding-top: 0.82em;
+    border-radius: 1.82em;
+    display: inline;
+    background-color: #1bb45e;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  /*------- content -------- */
+
+
+  .content {
+ 			z-index: 1;
+ 			width: 90%;
+ 			max-width: 1200px;
+ 			margin: 0 auto;
+ 			display: flex;
+ 			flex-wrap: wrap;
+ 			justify-content: space-between;
+ 			}
+
+      .container {
+    padding-top: calc(65px + 5vw);
+    align-items: center;
+   justify-content: center;
+   text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    padding-bottom: 5vw;
+ }
+
+
+ .button {
+     background-color: #4CAF50;
+     border: none;
+     color: white;
+     padding: 16px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-weight: bold;
+     font-size: 19px;
+     margin: 20px 4px;
+     -webkit-transition-duration: 0.4s;
+     transition-duration: 0.4s;
+     cursor: pointer;
+ }
+
+ .button1 {
+     background-color: white;
+     color: green;
+     border: 2px solid #97a398;
+     width: 320px;
+ }
+
+ .button1:hover {
+     background-color: #97a398;
+     color: white;
+ }
+
+
+ .boutoncentral {
+	border:none;
+	padding:6px 0 6px 0;
+	border-radius:8px;
+	background:#1bb45e;
+	font:bold 13px Arial;
+	color:#fff;
+  width: 220px;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 29px;
+  cursor: pointer;
+
+}
+
+.source a {
+  justify-content:space-between;
+  text-align: center;
+  display: flex;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  color:#727272;
+  font-size:0.75rem;
+}
+
+.copyright a {
+  justify-content:space-between;
+  text-align: center;
+  display: flex;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  color:#747474;
+  font-size:0.60rem;
+}
+
+.final a {
+  justify-content:space-between;
+  text-align: center;
+  display: flex;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  color:#1e21c3;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  font-size:0.60rem;
+}
