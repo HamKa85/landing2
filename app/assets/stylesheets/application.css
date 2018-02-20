@@ -1,0 +1,73 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ html {
+  	overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  body{
+  	background: #ffffff;
+  	color: green;
+  }
+
+  header{
+ font-family:"proxima-nova",sans-serif;
+}
+
+h1 {
+    color: black !important;
+    text-transform: uppercase;
+}
+
+p, a {
+ color:green;
+}
+
+
+  #header_flynn {
+  	display: flex;
+  	width: 97%;
+  	margin-left: 40px;
+  	margin-top: 20px;
+  	justify-content: space-between;
+  	font-size: 100%;
+  }
+
+  .logo_flynn{
+  	width: 220px;
+  	height: 40px;
+  }
+
+  #header_droite {
+  	display: flex;
+  	justify-content: flex-end;
+  	width: 15%;
+  	margin-left: 15px;
+  	margin-top: 15px;
+  	justify-content: space-between;
+  	font-size: 100%;
+  	color: white;
+    margin-right: 50px;
+  }
+
+  .about {
+    display: block;
+color: inherit;
+text-decoration: none;
+
+
+  }
